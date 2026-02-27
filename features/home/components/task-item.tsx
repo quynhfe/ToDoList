@@ -1,12 +1,12 @@
-import { Task } from "@/features/type";
 import { Check, Trash2 } from "lucide-react-native";
 import { Text, TouchableOpacity, View } from "react-native";
 
 export type TaskItemProp = {
-  task: Task;
+  task: { id: number; title: string; completed: boolean };
   onToggle: (id: number) => void;
   onDelete: (id: number) => void;
 };
+
 export default function TaskItem({ task, onToggle, onDelete }: TaskItemProp) {
   return (
     <TouchableOpacity

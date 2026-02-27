@@ -1,5 +1,11 @@
 {
   "expo": {
+    "icon": "./assets/images/bong-thui.jpg",
+    "splash": {
+      "image": "./assets/images/bong-thui.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#101c22"
+    },
     "web": {
       "bundler": "metro"
     },
@@ -13,7 +19,6 @@
     "ios": {
       "supportsTablet": true
     },
-
     "plugins": [
       "expo-router",
       [
@@ -27,11 +32,15 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "android": {
+      "package": "com.anonymous.todolist"
     }
   }
 }
